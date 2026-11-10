@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+		<meta name="color-scheme" content="dark light" />
+		<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0b0b14" />
+		<meta name="theme-color" media="(prefers-color-scheme: light)" content="#f4f1ea" />
+		<meta name="mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="apple-mobile-web-app-title" content="SHAD" />
+		<link rel="manifest" href="manifest.json" />
+		<link rel="icon" href="favicon.ico" sizes="any" />
+		<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png" />
+		<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+		<title>SHAD — Command</title>
+		<script>
+			// Theme before first paint: explicit choice wins, otherwise follow the device.
+			try {
+				var t = localStorage.getItem('lx_theme');
+				var dark = t ? t === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+				if (dark) document.documentElement.dataset.theme = 'dark';
+			} catch (e) {}
+		</script>
+		<link
+			rel="stylesheet"
+			href="./vendor/leaflet.css"
+		/>
+		<script src="./vendor/leaflet.js" defer></script>
+		<link href="./_app/immutable/entry/start.Xq-GLK-p.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/BLfBvXKe.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/XLugxne2.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/fwKqculK.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/FMepfwTG.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/DIMUoJ6G.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/BoepvfBg.js" rel="modulepreload">
+		<link href="./_app/immutable/entry/app.BrnXO1tm.js" rel="modulepreload">
+		<link href="./_app/immutable/nodes/0.U0v-xZlZ.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/BXU2Hg2u.js" rel="modulepreload">
+		<link href="./_app/immutable/nodes/2.In12FcMW.js" rel="modulepreload">
+		
+		<link href="./_app/immutable/assets/0.j1Pu-Gho.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/2.B7T16ZR8.css" rel="stylesheet">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents"><!--[--><!--[0--><!--[--><!--[--><!--[--><!--[-1--><!--]--> <!--[0--><div class="login-wrap shadowverse svelte-1uha8ag"><div class="login-box bare svelte-1uha8ag"><img class="dw-hero svelte-1uha8ag" src="darkwing.png" alt="" aria-hidden="true"/> <h1 class="dw-title svelte-1uha8ag">Shad0x0byte</h1> <p class="dw-sub svelte-1uha8ag">welcome to the shadowverse. There are dark things here.</p> <!--[0--><input id="snapFile" class="input svelte-1uha8ag" type="file" accept=".bin,.json,.enc,.enc.json" aria-label="snapshot file"/> <p style="font-family:var(--mono);font-size:11px;opacity:.75;margin-top:10px;text-align:center">open the encrypted offline copy (<code>snapshot.enc.json</code> / <code>archive.bin</code>) · passphrase required</p> <!--[-1--><!--]--><!--]--></div></div><!--]--><!--]--><!--]--><!--]--><!--]--> <!--[-1--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_n0koog = {
+						base: new URL(".", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("./_app/immutable/entry/start.Xq-GLK-p.js"),
+						import("./_app/immutable/entry/app.BrnXO1tm.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
